@@ -46,6 +46,7 @@ public class AuthorizationServerConfigurer extends AuthorizationServerConfigurer
                 .authorizedGrantTypes("password", "refresh_token")
                 .scopes("web", "mobile")
                 .accessTokenValiditySeconds(tokenExpire);
+               // .refreshTokenValiditySeconds(tokenExpire);
     }
 
     @Override
