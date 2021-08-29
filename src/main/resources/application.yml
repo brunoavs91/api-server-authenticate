@@ -1,29 +1,3 @@
-server:
-  port: 8088
-security:
-  oauth2:
-    client:
-      clientId: admin
-      clientSecret: 1234
 spring:
-  application:
-    name: 'server-auth'
-  datasource:
-    password: root
-    username: root
-    url: jdbc:mysql://localhost:3306/authDB
-    driver-class-name: org.mariadb.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
-token:
-  access:
-    expire: 60000
+  profiles:
+    active: prod
