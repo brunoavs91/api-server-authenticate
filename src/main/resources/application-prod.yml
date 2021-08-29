@@ -8,10 +8,7 @@ security:
 spring:
   application:
     name: 'server-auth'
-  datasource:
-    password: 'ck4ftjw9qjr27se9'
-    username: 'kc7goe14ju2hxa02'
-    url: jdbc:mysql://dcrhg4kh56j13bnu.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ejzg8cqflv2sg5fo?serverTimezone=GMT
+    url: ${JDBC_DATASOURCE_URL}
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
