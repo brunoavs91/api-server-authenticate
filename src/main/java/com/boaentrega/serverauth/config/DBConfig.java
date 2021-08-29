@@ -25,11 +25,11 @@ public class DBConfig {
     public void createUser(){
         UserRole role= UserRole.builder().roleName(Role.ADMIN).build();
 
-        User user1 = User.builder().id(2L)
+        User user1 = User.builder()
                 .password(encoder.encode("123"))
                 .roles(Arrays.asList(role))
-                .nome("Lucas").email("lucas@email")
-                .sobrenome("Assis").build();
+                .nome("Bruno").email("bruno@email")
+                .sobrenome("Vidal").build();
 
         repository.save(user1);
     }
