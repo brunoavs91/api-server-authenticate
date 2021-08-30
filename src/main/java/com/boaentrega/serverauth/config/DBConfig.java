@@ -20,19 +20,19 @@ public class DBConfig {
     private UserRepository repository;
     @Autowired
     private PasswordEncoder encoder;
-
-    @Bean
-    public void createUser(){
-        UserRole role= UserRole.builder().roleName(Role.ADMIN).build();
-
-        User user1 = User.builder()
-                .password(encoder.encode("123"))
-                .roles(Arrays.asList(role))
-                .nome("Bruno").email("bruno@email")
-                .sobrenome("Vidal").build();
-
-        repository.save(user1);
-    }
+//
+//    @Bean
+//    public void createUser(){
+//        UserRole role= UserRole.builder().roleName(Role.ADMIN).build();
+//
+//        User user1 = User.builder()
+//                .password(encoder.encode("123"))
+//                .roles(Arrays.asList(role))
+//                .nome("Bruno").email("bruno@email")
+//                .sobrenome("Vidal").build();
+//
+//        repository.save(user1);
+//    }
 
 
 
