@@ -11,11 +11,12 @@ spring:
   datasource:
     password: 'omjbr1lcr727wzv5'
     username: 'ix47y9wr4463uh7x'
-    url: jdbc:mysql://	dcrhg4kh56j13bnu.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/becuuzhi3samphf0?serverTimezone=GMT
+    url: jdbc:mysql://dcrhg4kh56j13bnu.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/becuuzhi3samphf0?serverTimezone=GMT
     driver-class-name: org.mariadb.jdbc.Driver
     jpa:
       hibernate:
         ddl-auto: update
+
 
 eureka:
   client:
