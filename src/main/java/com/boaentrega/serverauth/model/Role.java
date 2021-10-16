@@ -1,5 +1,5 @@
 package com.boaentrega.serverauth.model;
 
 public enum Role {
-    ADMIN, USER
+    ADMIN, USER_COLAB,USER_CLIENT
 }
